@@ -51,6 +51,8 @@
             max-height: 350px;            
             border-radius: 25px;
             margin-bottom: 40px;
+            object-fit: cover;
+            object-position: center center;
         }
         
         .title{            
@@ -109,25 +111,31 @@
         .ban__link:hover{
             
         }
+
+        /* Boldyrev style
+░░░░░░░░░░░▄▄▄▄▄▄▄▄▄▄██▄▄▄▄▄▄▄▄▄░░░░▄░
+▄███████████████████████▀▀▀▀▀▀▀██████▀
+██████▀▀▀░▄██▀░░▀███░░░░░░░░░░░░░░░░░░
+▀▀▀▀░░░░░░██░░░░░▀██▄░░░░░░░░░░░░░░░░░
+░░░░░░░░░░░░░░░░░░▀███▄░░░░░░░░░░░░░░░
+░░░░░░░░░░░░░░░░░░░░▀▀░░░░░░░░░░░░░░░░ */
+        .bip__container{
+            padding: 5vw;
+        }
+
+        .bip__link{
+            width: fit-content;
+            background: aqua;
+            padding: 1vw;
+            border-radius: 10px;
+            border: 2px solid blue;
+        }
     </style>
 </head>
 <body>
     <section class="section">
         <div class="container">
             <h1>Как скрасить новогодние праздники</h1>
-        </div>
-    </section>
-
-    <!-- Стартовый шаблон для всех -->
-    <section class="section ">
-        <div class="container">
-            <img class="img" src="https://sidingvin.ru/wp-content/uploads/2/2/7/2272b50c664430d139abed87f3922e3e.jpeg" alt="Заглушка">
-            <h2 class="title">H2 TITLE TEXT</h2>
-            <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt tenetur quae dicta illo nisi est id molestias! Aliquid quo eligendi dolor delectus nobis non, fugit iure rerum quae. Consequatur, quaerat?
-            </p>
-            <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt tenetur quae dicta illo nisi est id molestias! Aliquid quo eligendi dolor delectus nobis non, fugit iure rerum quae. Consequatur, quaerat?</p>
-            <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt tenetur quae dicta illo nisi est id molestias! Aliquid quo eligendi dolor delectus nobis non, fugit iure rerum quae. Consequatur, quaerat?</p>
-            <a href="#" class="link">Подробнее...</a>
         </div>
     </section>
 
@@ -146,6 +154,36 @@
         <div class="ban_inner">
 
         </div>
+            <img class="img ban__img" src="https://888travel.ru/images/design/NY_Bel/08.jpg" alt="Заглушка">
+            <h2 class="title ban__title">Провести Рождество в Твери</h2>
+            <p class="text ban__text">Обзорная экскурсия по центру Клина - маленькому городку в Подмосковье, словно сошедшему со страниц литературных шедевров Н.В. Гоголя. И дело тут не в дошедших до нашего времени старинных памятниках архитектуры, а в особой атмосфере. Здесь провел свои лучшие творческие годы П. И. Чайковский, жил и творил литератор А. П. Гайдар, автор знакомого с детства «Тимура и его команды». Останавливался на местном почтовом дворе писатель А. Н. Радищев, «путешествовавший из Петербурга в Москву», его помнит сохранившаяся в городе старинная почтовая станция, памятник архитектуры XVIII-XIX вв.
+            </p>
+            <p class="text ban__text">Вы узнаете много нового и интересного из истории и жизни Клина, а также познакомитесь с его символом – фонтаном, со скульптурой «Девочка-грибница», а также визитной карточкой города – Соборным комплексом.</p>
+            <a href="https://888travel.ru/tverskaya-oblast/noviy-god-v-tveri/5673-rozhdestvenskoe-puteshestvie" class="link ban__link">Подробнее...</a>
+        </div>
+    </section>
+
+    <!-- Совет от Болдырева И. П. -->
+    <section class="section bip__section">
+        <div class="container bip__container">
+            <img class="img bip__img" src="https://www.meme-arsenal.com/memes/5b9ee7db5ef66a8f6a062aa6af181064.jpg" alt="Смурфик">
+            <h2 class="title bip__title">Новый год будет. Советы чтобы отдохнуть!!!1!</h2>
+            <p class="text bip__text">На Новый год хорошим решением может быть арендовать домик посреди леса. Чем хорош этот вариант? Это и смена обстановки, и новые впечатления. Природа всегда разнообразна, поэтому очутившись в новом для вас месте, вы гарантировано избавитесь от стрессов и отдохнёте душой!</p>
+            <p class="text bip__text">В городах мало развита традиция общаться с соседями, но если в вашем доме есть общие чаты, то можно организовать праздник прямо во дворе! Можно даже нанять аниматоров, которые будут развлекать детей, а взрослым присоединиться к ним - ведь только дети позволяют взрослым испытать те же эмоции, проживая их вместе!</p>
+            <p class="text bip__text">Для любителей путешествовать можно отправится в Санкт-Петербург, Москву или Сочи на горнолыжный курорт! Так вы сможете отметить праздник с размахом, ведь именно в этих городах на Новый год организовывают масштабные развлекательные программы, а люди активно посещают их!</p>
+            <a href="https://lifehacker.ru/50-zanyatij-v-novogodnie-prazdniki/" class="link bip__link" target="_blank">50 интересных занятий</a>
+            
+    
+    
+    <!-- Совет от Полины-->
+    <section class="section ">
+        <div class="container">
+            <img class="img" src="https://sutochno.ru/doc/images/galleries/180/ng-idea3.jpg" alt="Заснеженное дерево">
+            <h2 class="title"> Покататься на горнолыжных курортах Сочи</h2>
+            <p class="text">Чтобы интересно встретить Новый год, отправляйтесь в Сочи. Зимой это в первую очередь горнолыжные курорты: «Красная Поляна», «Роза Хутор» и «Газпром» («Лаура» и «Альпика»). Туристов на каникулах здесь очень много, но можно схитрить — например, выйти на трассу прямо с утра.</p>
+            <p class="text">Развлечений после катания хоть отбавляй: рестораны, кафе, спа, аквапарки, торговые центры, кинотеатры — можно весело отмечать все каникулы.</p>
+            <p class="text">От Красной Поляны всегда можно спуститься к Черному морю — не для того, чтобы искупаться, а чтобы осмотреть интересные места Большого Сочи: Олимпийский парк, Сочи Парк, Дендрарий или даже дачу Сталина (как говорится, не Дедом Морозом единым). Также можно порезвиться в парке «Ривьера» или круглогодичном аквапарке «Аквалоо».            </p>
+            <a href="https://sutochno.ru/info/noviy-god-idei"  class="link">Подробнее...</a>
         </div>
     </section>
 </body>
