@@ -15,6 +15,9 @@
             font-family: 'Noto Sans', sans-serif;
         }
 
+        :root{
+            --color1:#e41749;
+        }
         /* Global style */
         .section{
             display: flex;
@@ -48,6 +51,8 @@
             max-height: 350px;            
             border-radius: 25px;
             margin-bottom: 40px;
+            object-fit: cover;
+            object-position: center center;
         }
         
         .title{            
@@ -77,6 +82,7 @@
         
         .ban__container{
             text-align: center;
+            justify-content: space-between;
         }
         
         .ban__img{
@@ -87,8 +93,23 @@
             
         }
         
-        .ban__text{
-
+        .ban__text:nth-child(3){
+            padding-bottom: 2%;
+        }
+        .ban_inner{
+            width: 50%;
+            height: 100%;
+            text-align: left;
+        }
+        .ban__link{
+            padding: 2%;
+            background:var(--color1);
+            border-radius: 15px;
+            color: white;
+            font-weight: 400;
+        }
+        .ban__link:hover{
+            
         }
 
         /* Boldyrev style
@@ -119,6 +140,11 @@
         .bip__title{
             text-align: center;
         }
+
+        /* Polina style */
+        .lpv__link{
+            color: blueviolet;
+        }
     </style>
 </head>
 <body>
@@ -128,29 +154,27 @@
         </div>
     </section>
 
-    <!-- Стартовый шаблон для всех -->
-    <section class="section ">
-        <div class="container">
-            <img class="img" src="https://sidingvin.ru/wp-content/uploads/2/2/7/2272b50c664430d139abed87f3922e3e.jpeg" alt="Заглушка">
-            <h2 class="title">H2 TITLE TEXT</h2>
-            <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt tenetur quae dicta illo nisi est id molestias! Aliquid quo eligendi dolor delectus nobis non, fugit iure rerum quae. Consequatur, quaerat?
-            </p>
-            <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt tenetur quae dicta illo nisi est id molestias! Aliquid quo eligendi dolor delectus nobis non, fugit iure rerum quae. Consequatur, quaerat?</p>
-            <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt tenetur quae dicta illo nisi est id molestias! Aliquid quo eligendi dolor delectus nobis non, fugit iure rerum quae. Consequatur, quaerat?</p>
-            <a href="#" class="link">Подробнее...</a>
-        </div>
-    </section>
-
     <!-- Совет от Булохова А.Н. -->
     <section class="section ban__section">
         <div class="container ban__container">
-            <img class="img ban__img" src="https://sidingvin.ru/wp-content/uploads/2/2/7/2272b50c664430d139abed87f3922e3e.jpeg" alt="Заглушка">
-            <h2 class="title ban__title">Топ 5 советов как развлечься в новогоднюю ночь </h2>
-            <p class="text ban__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt tenetur quae dicta illo nisi est id molestias! Aliquid quo eligendi dolor delectus nobis non, fugit iure rerum quae. Consequatur, quaerat?
+            <h2 class="title ban__title">Топ 5 советов как развлечься в новогоднюю ночь (получить подзатыльник)</h2>
+            <div class="ban_inner">
+                <ul>
+                    <li class="text ban__text">Пить пиво с таранкой.</li>
+                    <li class="text ban__text">Повзрывать феерверки (в квартире)</li>
+                    <li class="text ban__text">Подложить вместо свечей на новогоднем торте питарды</li>
+                    <a href="#" class="link ban__link">GET подзатыльник</a>
+                </ul>
+        </div>
+        <div class="ban_inner">
+
+        </div>
+            <img class="img ban__img" src="https://888travel.ru/images/design/NY_Bel/08.jpg" alt="Заглушка">
+            <h2 class="title ban__title">Провести Рождество в Твери</h2>
+            <p class="text ban__text">Обзорная экскурсия по центру Клина - маленькому городку в Подмосковье, словно сошедшему со страниц литературных шедевров Н.В. Гоголя. И дело тут не в дошедших до нашего времени старинных памятниках архитектуры, а в особой атмосфере. Здесь провел свои лучшие творческие годы П. И. Чайковский, жил и творил литератор А. П. Гайдар, автор знакомого с детства «Тимура и его команды». Останавливался на местном почтовом дворе писатель А. Н. Радищев, «путешествовавший из Петербурга в Москву», его помнит сохранившаяся в городе старинная почтовая станция, памятник архитектуры XVIII-XIX вв.
             </p>
-            <p class="text ban__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt tenetur quae dicta illo nisi est id molestias! Aliquid quo eligendi dolor delectus nobis non, fugit iure rerum quae. Consequatur, quaerat?</p>
-            <p class="text ban__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt tenetur quae dicta illo nisi est id molestias! Aliquid quo eligendi dolor delectus nobis non, fugit iure rerum quae. Consequatur, quaerat?</p>
-            <a href="#" class="link ban__link">Подробнее...</a>
+            <p class="text ban__text">Вы узнаете много нового и интересного из истории и жизни Клина, а также познакомитесь с его символом – фонтаном, со скульптурой «Девочка-грибница», а также визитной карточкой города – Соборным комплексом.</p>
+            <a href="https://888travel.ru/tverskaya-oblast/noviy-god-v-tveri/5673-rozhdestvenskoe-puteshestvie" class="link ban__link">Подробнее...</a>
         </div>
     </section>
 
@@ -174,7 +198,7 @@
             <p class="text">Чтобы интересно встретить Новый год, отправляйтесь в Сочи. Зимой это в первую очередь горнолыжные курорты: «Красная Поляна», «Роза Хутор» и «Газпром» («Лаура» и «Альпика»). Туристов на каникулах здесь очень много, но можно схитрить — например, выйти на трассу прямо с утра.</p>
             <p class="text">Развлечений после катания хоть отбавляй: рестораны, кафе, спа, аквапарки, торговые центры, кинотеатры — можно весело отмечать все каникулы.</p>
             <p class="text">От Красной Поляны всегда можно спуститься к Черному морю — не для того, чтобы искупаться, а чтобы осмотреть интересные места Большого Сочи: Олимпийский парк, Сочи Парк, Дендрарий или даже дачу Сталина (как говорится, не Дедом Морозом единым). Также можно порезвиться в парке «Ривьера» или круглогодичном аквапарке «Аквалоо».            </p>
-            <a href="https://sutochno.ru/info/noviy-god-idei"  class="link">Подробнее...</a>
+            <a href="https://sutochno.ru/info/noviy-god-idei"  class="link lpv__link">Подробнее...</a>
         </div>
     </section>
 </body>
